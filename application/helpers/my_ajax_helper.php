@@ -36,3 +36,8 @@ function assoc_to_uri($array)
     }
     return implode('/', $temp);
 }
+
+function configEmail()
+{
+    define("WEBMASTER_EMAIL", 'contato@jobdesign.com.br');
+}
