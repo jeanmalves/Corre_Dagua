@@ -1,0 +1,105 @@
+ @import url('http://fonts.googleapis.com/css?family=Open+Sans');
+  @import url('http://fonts.googleapis.com/css?family=Montserrat');
+
+  .col-md-4{
+    margin-bottom: 30px;
+  }
+  .footer{
+    margin-top: 55px;
+  }
+  .cols-wrapper {
+    overflow: hidden;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .milestone-container {
+    background-color: #48C491;
+    position: relative;
+  }
+
+  .milestone-container:after {
+      content:'';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -25px;
+      width: 0;
+      height: 0;
+      border-top: solid 25px #48C491;
+      border-left: solid 25px transparent;
+      border-right: solid 25px transparent;
+  }
+
+  .milestone {
+    color: #ffffff;
+    font-family: 'Open Sans', "Times New Roman", Times,   serif;
+    font-size: 80px;
+    line-height: 1.2;
+    padding: 0;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+  }
+
+  h3 {
+    font-family: Montserrat;
+    color: #ffffff;
+    margin-top: 0;
+    padding-bottom: 13px;
+  }
+
+  .input-search{
+    height: 56px!important;
+    margin-top: 3%;
+    margin-right: 10px;
+    font-size: 1.3em;
+    background: transparent!important;
+    border: 1px solid #c5c5c5!important;
+  }
+
+  .icon-search{
+    font-size: 40px;
+    color: #48c490;
+  }
+
+  .btn-search{
+    border: none;
+    margin-top: 25px;
+  }
+  .chamada-1{
+    margin-bottom: -13px;
+  }
+  .chamada-2{
+    padding-top: 43px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .wow{
+
+    margin-bottom: 48px;
+  }
+  .chamada-1 .text2, .chamada-2 .text2 {
+    margin-top: 0;
+    font-size: 45px;
+    color: #1b1b1b;
+  }
+  .chamada-1 .text2 span, .chamada-2 .text2 span{
+    color: #42DBBD;
+  }
+  .category-sub-banners .banner-box .overlay .table{
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+  }
+  @media (max-width: 768px){
+    .chamada-1 .text2, .chamada-2 .text2 {
+      font-size: 40px;
+    }
+  }
+
+  @media (max-width: 640px){
+    .chamada-1 .text2, .chamada-2 .text2 {
+      font-size: 30px;
+    }
+  }
