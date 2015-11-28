@@ -1,5 +1,6 @@
- @import url('http://fonts.googleapis.com/css?family=Open+Sans');
-  @import url('http://fonts.googleapis.com/css?family=Montserrat');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+@import url('http://fonts.googleapis.com/css?family=Montserrat');
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700); 
 
   .col-md-4{
     margin-bottom: 30px;
