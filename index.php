@@ -1,10 +1,4 @@
 <?php
-    	error_reporting(-1);
-		ini_set('display_errors', 'On');
-
-setlocale(LC_MONETARY,"pt_BR", "ptb");
-setlocale(LC_ALL, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
-date_default_timezone_set('America/Sao_Paulo');	
 /**
  * CodeIgniter
  *
@@ -104,26 +98,7 @@ switch (ENVIRONMENT)
  * Include the path if the folder is not in the same directory
  * as this file.
  */
-	// if (PHP_OS == "WINNT")
-	// {
-	// 	$full_server_path = "C:/wamp/www/";
- //                if(XAMPP){
- //                    $full_server_path = "C:/xampp/htdocs/";
- //                }
-	// }
-	// else if (PHP_OS == "Linux")
-	// {
-	// 	//$full_server_path = "/var/www/";
-	// 	$full_server_path = (pathinfo(realpath('./'))['basename'] == 'public_html') ? realpath('../') : realpath('../../');
-	// 	$full_server_path .= '/';
-	// }
-	// else
-	// {
-	// 	$full_server_path = '/home/melhergu/public_html/ahmulek/';
-	// }
-	// $system_path = $full_server_path."system";
 	$system_path = 'system';
-
 
 /*
  *---------------------------------------------------------------
@@ -138,8 +113,7 @@ switch (ENVIRONMENT)
  *
  * NO TRAILING SLASH!
  */
-	$application_folder = realpath('./application');
-	$root_folder = realpath('./');
+	$application_folder = 'application';
 
 /*
  *---------------------------------------------------------------
@@ -246,9 +220,6 @@ switch (ENVIRONMENT)
  */
 	// The name of THIS file
 	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
-
-	// Path to the root folder
-	define('ROOTPATH', str_replace('\\', '/', $root_folder));
 
 	// Path to the system folder
 	define('BASEPATH', str_replace('\\', '/', $system_path));

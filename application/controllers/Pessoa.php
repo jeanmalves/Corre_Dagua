@@ -1,43 +1,64 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-include_once(APPPATH . "controllers/Base.php");
 
-class Pessoa extends Base_Controller {
+class Pessoa extends CI_Controller {
 	
-
-	 var $layout = 'layout_peera';
 	 
-    public function __construct() {
-    	parent::__construct();
-	}
-
-	public function index(){
+   	public function index(){
 		
-		//$this->data['data']['logos'] = $logos;
-		$this->load->view($this->layout, $this->data );
+		$data['site_name'] = "Corre D'água";
+		$data['site_title'] = "Corre D'água - Consultar Área de Risco";
+		$data['site_page'] = "index";
+		 $this->load->view('template/header', $data);
+		 $this->load->view('pessoa/index', $data);
+		 $this->load->view('template/footer', $data);
 	}
 
-	// public function mostrarRisco(){
+	public function mostrarRisco(){
 
-	// 	$post = (!empty($_POST)) ? true : false;
+		$post = (!empty($_POST)) ? true : false;
 
-	// 	if($post)
-	// 	{
-
-	// 		$name = stripslashes($_POST['name']);
-	// 		$email = trim($_POST['email']);
-	// 		$subject = stripslashes($_POST['subject']);
-	// 		$message = stripslashes($_POST['message']);
-
-	// 		$error = '';
-
-	// 		if(!$error)
-	// 		{
+		if($post)
+		{
+			$bairro = stripslashes($_POST['strDados']);
+			
+			if (!empty($bairro)) {
 				
-	// 			$this->data['data']['erro'] = TRUE;
+				//Carrega o banco de dados
+				$this->load->database();
+				$this->load->model('dados_model');
+				
+				//Não usado devido ao problema com extensao com o postgreSQL
+				//$query = $this->dados_model->buscar($bairro);
 
-	// 		}
-	// 	}
-	// }
+				$query = $this->dados_model->buscaArrray();
+
+				$data['dados'] = $query;
+				
+			}
+			$error = '';
+
+			if(!$error)
+			{
+				
+				$data['erro'] = TRUE;
+
+			}
+		}
+	}
+
+	public function inserirDadosUsuario()
+	{
+		$data['site_name'] = "Corre D'água";
+		$data['site_title'] = "Corre D'água - Alerte-me";
+		$data['site_page'] = "inserirDadosUsuario";
+
+		if(isset($_POST)){
+			$this->load->view('template/header', $data);
+			$this->load->view('pessoa/inserirDadosUsuario', $data);
+			$this->load->view('template/footer', $data);
+		}	 
+
+	}
 }

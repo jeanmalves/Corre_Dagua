@@ -1,51 +1,27 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
-
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
 .DS_Store
-.AppleDouble
-.LSOverride
 
-# Thumbnails
-._*
+application/cache/*
+!application/cache/index.html
+!application/cache/.htaccess
 
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
 
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-application/cache/.htaccess
-application/cache/016b5edbfad10af70ca2cdb3389b7109
-application/cache/1ef53854b5cd970f94034d3b472f1dd2
-application/cache/9336f6f1405956efe880f7fddc6e6f5e
-application/cache/c104cb04cde9661d8f0c174d8d07a399
-application/cache/9c0318a8b19af65970d96550ab79bfb7
-application/cache/682629c5d7c8548badac70ba54097990
-application/cache/index.html
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+/vendor/
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
