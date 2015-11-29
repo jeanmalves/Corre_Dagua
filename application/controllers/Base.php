@@ -29,6 +29,7 @@ class Base_Controller extends CI_Controller {
 
         //set default for ctrlr_name and class_name
         $class_name = get_class($this);
+        
         $this->ctrlr_name = strtolower($class_name);
         $this->class_name = $class_name;
 

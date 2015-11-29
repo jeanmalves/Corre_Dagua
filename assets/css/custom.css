@@ -116,9 +116,12 @@ header .navbar {
     padding: 0 0 0 15px;
 }
 
+#logo{
+  margin: 0 auto
+}
 
 header .navbar-collapse  ul.navbar-nav {
-    float: right;
+   /* float: right;*/
     margin-right: 0;
 }
 

@@ -1,6 +1,6 @@
 /* ==== Google font ==== */
 @import url('http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700');
-
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 /* === prettify === */
 @import url('../js/google-code-prettify/prettify.css');
 /* === fontawesome === */
@@ -16,7 +16,7 @@
 ==================================== */
 
 body {
-	font-family:'Open Sans', Arial, sans-serif;
+	font-family:'Raleway', Arial, sans-serif;
 	font-size:14px;
 	font-weight:300;
 	line-height:1.6em;
@@ -122,7 +122,7 @@ header .navbar {
 
 
 header .navbar-collapse  ul.navbar-nav {
-    float: right;
+    /*float: right;*/
     margin-right: 0;
 }
 
@@ -1829,16 +1829,37 @@ article img.pull-right, article .align-right{
 	.navbar-brand {
 		margin-top: 10px;
 		border-bottom: none;
+
 	}
 	.navbar-header {
 		margin-top: 20px;
 		border-bottom: none;
+		margin-right: 37%
 	}
 	
 	.navbar-nav {
 		border-top: none;
 		float: none;
 		width: 100%;
+	}
+
+	#logo{
+		padding-left: 13%
+	}
+	#texto-home{
+
+		font-size: 1.6em;
+		color: #31459d;
+		text-align: center;
+		line-height: 120%;
+	}
+
+	#texto-busca{
+		text-align: center;
+	}
+
+	#busca{
+		margin-left: 10%;
 	}
 
 	header .navbar-nav > li  {

@@ -102,59 +102,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['test'] = 'test/index';
 
-$route['eu-quero/(:any)'] = 'product/eu_quero/$1';
 
-$route['newsletter'] = 'product/newsletter';
-
-
-
-// $route['mulheres/(:any)'] = 'product/search/q/$1';
-
-// $route['homens/(:any)'] = 'product/search/q/$1';
-
-// $route['calcados/(:any)'] = 'product/search/q/$1';
-
-// $route['acessorios/(:any)'] = 'product/search/q/$1';
-
-
-
-
-$route['pagina/(:any)'] = 'product/page/$1';
-
-$route['ac/(:any)'] = 'product/auto_complete/$1';
-
-$route['lojas'] = 'product/lojas';
-
-$route['lojas/(:any)/(:any)'] = 'product/search_lojas/$1/$2';
-
-
-
-$route['marcas/(:any)'] = 'product/search/brand/$1';
-
-$route['pre-buscar'] = 'product/pre_search';
-
-
-$aliases = array(
-    'mulheres',
-    'homens',
-    'calcados',
-    'acessorios',
-    'buscar'
-);
-
-foreach ($aliases as $alias):
-    $route[$alias] = 'product/search';
-    $route[$alias . '/(:any)'] = 'product/search/$1';
-    $route[$alias . '/(:any)/(:any)'] = 'product/search/$1/$1';
-    $route[$alias . '/(:any)/(:any)/(:any)'] = 'product/search/$1/$1/$1';
-    $route[$alias . '/(:any)/(:any)/(:any)/(:any)'] = 'product/search/$1/$1/$1/$1';
-    $route[$alias . '/(:any)/(:any)/(:any)/(:any)/(:any)'] = 'product/search/$1/$1/$1/$1/$1';
-    $route[$alias . '/(:any)/(:any)/(:any)/(:any)/(:any)/(:any)'] = 'product/search/$1/$1/$1/$1/$1/$1';
-endforeach;
-
-
-
-$route['default_controller'] = 'product';
+$route['default_controller'] = 'Pessoa';
 
 $route['404_override'] = '';
 

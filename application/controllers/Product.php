@@ -68,7 +68,7 @@ class Product extends Base_Controller {
 	}
 
 	public function index(){
-		$this->output->cache(5);
+		//$this->output->cache(5);
 		foreach (glob(ROOTPATH.'/assets/images/marca-*.png') as $l) {
 			$logos[] = 'assets/images/' . basename($l);
 		}
